@@ -1,0 +1,61 @@
+.jumbotron {
+  padding-top: 7rem;
+  background-color: #c2d9fd;
+  animation-name: bgcolor;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bgcolor {
+  0% {
+    background-color: #c2d9fd;
+  }
+  25% {
+    background-color: #97befc;
+  }
+  50% {
+    background-color: #5395ff;
+  }
+  75% {
+    background-color: #0062ff;
+  }
+  100% {
+    background-color: #c2d9fd;
+  }
+}
+section {
+  padding-top: 5rem;
+}
+
+#about2 {
+  order: 1;
+}
+
+#about1 {
+  order: 2;
+}
+@media screen and (max-width: 450px) {
+  #about1 p {
+    text-align: center;
+  }
+  #svg0 {
+    position: relative;
+    top: 5px;
+  }
+  #svg1 {
+    position: relative;
+    top: 5px;
+  }
+  #svg2 {
+    position: relative;
+    top: 7px;
+  }
+
+  #svg3 {
+    position: relative;
+    top: 7px;
+  }
+  #titleproject {
+    margin-bottom: 10px;
+  }
+}

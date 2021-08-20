@@ -1,2 +1,2 @@
-# RomarioLendo12.github.io
-Repository penyimpanan website portfolio Romario Lendo
+# romariolendo12.github.io
+Repository ini menyimpan file website portfolio Romario.
