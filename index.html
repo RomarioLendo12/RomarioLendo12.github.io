@@ -10,6 +10,9 @@
     <!-- Boostrap Icon link bellow -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="style.css" />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <title>My Portfolio | Romario Lendo</title>
   </head>
   <body id="home">
@@ -33,9 +36,9 @@
     <!-- Akhir Navbar -->
     <!-- Awal jumbotron -->
     <section class="jumbotron text-center">
-      <img src="img/rio.jpg" class="rounded-circle img-thumbnail" width="150px" alt="Romario Lendo" onclick="alert('Ganteng kan?')" />
+      <img src="img/rio.jpg" class="rounded-circle img-thumbnail" width="150px" alt="Romario Lendo" onclick="alert('Ganteng kan?')" data-aos="fade-down" data-aos-duration="1500" />
       <h1 class="display-4 fw-bold">Romario Lendo</h1>
-      <p class="lead fw-bold">Programmer | Student</p>
+      <p class="lead fw-bold"></p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" id="svg0">
         <path
           fill="#ffffff"
@@ -55,7 +58,7 @@
           </div>
         </div>
         <div class="row justify-content-center fs-5">
-          <div class="col-md-4" style="padding-top: 20px" id="about1">
+          <div class="col-md-4" style="padding-top: 20px" id="about1" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300">
             <p>
               Romario Lendo, 20 yo.<br />
               Program Studi Informatika <br />
@@ -63,7 +66,7 @@
               Universitas Sam Ratulangi Manado.
             </p>
           </div>
-          <div class="col-md-4 text-center" id="about2">
+          <div class="col-md-4 text-center" id="about2" data-aos="fade-right" data-aos-duration="1500">
             <img src="img/romario1.jpg" class="rounded-circle img-thumbnail" width="200px" alt="Romario Lendo" onclick="alert('Ganteng kan?')" />
           </div>
         </div>
@@ -87,7 +90,7 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-up" data-aos-duration="1000">
               <img src="img/projects/1.png" class="card-img-top" alt="Projects 1" />
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -95,7 +98,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="100">
               <img src="img/projects/2.png" class="card-img-top" alt="Projects 2" />
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -103,7 +106,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="200">
               <img src="img/projects/3.png" class="card-img-top" alt="Projects 3" />
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -111,7 +114,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="300">
               <img src="img/projects/4.png" class="card-img-top" alt="Projects 4" />
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -119,7 +122,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="400">
               <img src="img/projects/5.png" class="card-img-top" alt="Projects 5" />
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -190,6 +193,21 @@
     </footer>
     <!-- Akhir Footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <!-- GSAP ANIMATION PLUGIN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/TextPlugin.min.js"></script>
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.to('.lead', { duration: 2, delay: 1.5, text: 'Programmer | Student' });
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
 
     <script>
       const scriptURL = 'https://script.google.com/macros/s/AKfycbz7LA9_Wb_9RPPyX4vdtWCmeIyW1eMepYFi2-Njna2mk1dWJj2NsJjlD1IbEZsmOdU5tA/exec';
